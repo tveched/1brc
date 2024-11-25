@@ -1,0 +1,4 @@
+FROM dragrace-base:latest
+
+RUN bash -c ./prepare_evaluation.sh
+RUN

@@ -15,14 +15,6 @@
 #  limitations under the License.
 #
 
-if [ -z "$1" ]
-  then
-    echo "Usage: prepare_evaluation.sh <fork name>"
-    exit 1
-fi
-
-
-git checkout -b $1
-
-git pull https://github.com/$1/1brc.git
-# git pull git@github.com:$1/1brc.git
+# Uncomment below to use sdk
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk use java 21.0.1-graal 1>&2
