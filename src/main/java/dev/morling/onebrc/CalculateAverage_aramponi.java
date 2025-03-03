@@ -92,6 +92,7 @@ public class CalculateAverage_aramponi {
             outerloop: while (current != null) {
                 // first compare length
                 if (length == current.city.length) {
+                    // this should be executed ;-)
                     // if (Arrays.equals(buffer, current.city)) {
                     // break;
                     // }
